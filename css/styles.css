@@ -1,8 +1,18 @@
+:root {
+  --accent-color: #779b43;
+  --main-color: #dff0e1;
+}
+
+body {
+  background-color: var(--main-color);
+}
 .container {
   text-align: center;
 }
 
-section {
+header,
+section,
+.page-footer {
   margin: 30px 0;
   padding: 0 15px;
 }
@@ -17,6 +27,9 @@ section {
   margin-top: -15px;
 }
 
+.my-works {
+  color: var(--accent-color);
+}
 .work-img {
   width: 100%;
   height: auto;
@@ -32,7 +45,7 @@ section {
 
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
-  border-radius: 5px 5px 4px 4px;
+  border-radius: 7px 7px 7px 7px;
 }
 @media screen and (min-width: 480px) {
   .works__example {
@@ -49,5 +62,46 @@ section {
   padding-bottom: 30px;
   text-align: center;
   background-color: #fff;
+  color: var(--accent-color);
   border-radius: 0px 0px 4px 4px;
+}
+
+.join-list {
+  display: flex;
+  justify-content: center;
+}
+.social-list-item + .social-list-item {
+  margin-left: 15px;
+}
+.social-item-icon {
+  fill: currentColor;
+}
+.social-item-link {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  border-radius: 50%;
+  transition: background-color var(--transition-time)
+      var(--attenuation-function),
+    color var(--transition-time) var(--attenuation-function);
+}
+
+.social-list-item > .social-item-link {
+  color: #ffffff;
+  background-color: rgba(138, 136, 136, 0.818);
+}
+
+.social-item-link:hover,
+.social-item-link:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+.page-footer {
+  margin: 30px 0;
+  padding: 0 15px;
 }

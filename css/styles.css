@@ -37,7 +37,6 @@ body {
   margin: 10px 0;
   border-radius: 10px;
   min-width: 170px;
-
   transition: background-color var(--transition-time)
     var(--attenuation-function);
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
@@ -62,7 +61,6 @@ body {
   margin-bottom: 20px;
 }
 
-.activity__link,
 .contact__link {
   display: flex;
   font-size: 20px;
@@ -71,16 +69,6 @@ body {
   justify-content: center;
   padding: 2px 0;
   margin: 5px 0;
-}
-
-.activity__icon {
-  margin-left: auto;
-  fill: currentColor;
-}
-
-.contact-item-icon {
-  margin-right: 10px;
-  fill: currentColor;
 }
 
 .logo-head {
@@ -121,6 +109,69 @@ body {
   height: 30px;
 }
 
+.header {
+  background-color: #ffffff;
+  padding: 20px 0;
+}
+
+.works,
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-top: -15px;
+  justify-content: center;
+}
+
+.works__example,
+.portfolio__example {
+  width: 450px;
+  height: auto;
+  margin-top: 15px;
+  margin-left: 15px;
+  overflow: hidden;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 7px 7px 7px 7px;
+}
+
+.portfolio__button {
+  width: 300px;
+  margin: 30px auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.portfolio__link {
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+  display: flex;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  padding: 10px 10px;
+  color: var(--text-color);
+  transition: background-color var(--transition-time)
+    var(--attenuation-function);
+}
+
+.activity__link,
+.contact__link {
+  font-size: 20px;
+  color: var(--text-color);
+  padding: 2px 0;
+  margin: 5px 0;
+}
+.contact-item-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.portfolio__link:hover {
+  background-color: var(--hover-color);
+}
+
 @media screen and (min-width: 450px) {
   .container {
     max-width: 580px;
@@ -136,6 +187,11 @@ body {
     margin-left: 10px;
     margin-top: 0;
     padding: 10px;
+  }
+
+  .works__example,
+  .portfolio__example {
+    flex-basis: calc((100% - 30px) / 2);
   }
   .about__meta,
   .activitty__block,
@@ -184,85 +240,17 @@ body {
   }
   .activity__link,
   .contact__link {
-    padding: 12px;
-    font-size: 28px;
+    display: flex;
+    font-size: 20px;
+    color: var(--text-color);
+    align-items: center;
+    justify-content: center;
+    padding: 2px 0;
+    margin: 5px 0;
   }
   .contact__item {
     max-width: 350px;
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-.header {
-  background-color: #ffffff;
-  padding: 20px 0;
-}
-
-.activity__list {
-  display: none;
-}
-
-/*  ------- PORTFOLIO ------- */
-
-.works {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -15px;
-  margin-top: -15px;
-  justify-content: center;
-}
-
-.works__example {
-  width: 450px;
-  height: auto;
-  margin-top: 15px;
-  margin-left: 15px;
-  outline: 2px solid var(--hover-color);
-  overflow: hidden;
-
-  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
-    0px 2px 1px rgb(0 0 0 / 20%);
-  border-radius: 7px 7px 7px 7px;
-}
-@media screen and (min-width: 450px) {
-  .works__example {
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
-
-.portfolio {
-  width: 300px;
-  margin: 30px auto;
-
-  justify-content: center;
-  text-align: center;
-}
-
-.portfolio__link {
-  font-size: 20px;
-  align-items: center;
-  justify-content: center;
-  margin: 5px 0;
-  display: flex;
-  border-radius: 10px;
-  background-color: var(--bg-color);
-  padding: 10px 10px;
-  color: var(--text-color);
-  transition: background-color var(--transition-time)
-    var(--attenuation-function);
-}
-
-.activity__link,
-.contact__link {
-  display: flex;
-  font-size: 20px;
-  color: var(--text-color);
-  align-items: center;
-  justify-content: center;
-  padding: 2px 0;
-  margin: 5px 0;
-}
-.portfolio__link:hover {
-  background-color: var(--hover-color);
 }

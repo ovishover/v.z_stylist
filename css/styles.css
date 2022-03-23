@@ -44,6 +44,7 @@ section,
 .adress-item-icon {
   align-items: center;
   margin-right: 10px;
+  fill: currentColor;
 }
 /*  ------- PORTFOLIO ------- */
 .my-works {

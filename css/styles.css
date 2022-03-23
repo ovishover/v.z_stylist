@@ -1,6 +1,8 @@
 :root {
   --accent-color: #779b43;
   --main-color: #dff0e1;
+  --text-color: #757575;
+  --hover-color: rgba(122, 183, 129, 0.6);
   --attenuation-function: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-time: 300ms;
 }
@@ -58,7 +60,7 @@ body {
 }
 .activity__item:hover,
 .contact__item:hover {
-  background-color: rgba(122, 183, 129, 0.606);
+  background-color: var(--hover-color);
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -89,7 +91,7 @@ body {
 .contact__link {
   display: flex;
   font-size: 24px;
-  color: #757575;
+  color: var(--text-color);
   align-items: center;
   padding: 2px 0;
   margin: 5px 0;
@@ -104,14 +106,20 @@ body {
   margin-right: 10px;
   fill: currentColor;
 }
-/*  ------- HEADER ------- */
 
 .logo-head {
   text-align: center;
-  color: var(--accent-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  padding: 10px 0;
 }
 
-.contact__position {
+.logo-head:hover {
+  background-color: var(--hover-color);
+}
+/*  ------- HEADER ------- */
+
+/* .contact__position {
   display: flex;
   margin: 0 auto;
   font-weight: 400;
@@ -121,8 +129,8 @@ body {
   color: #757575;
   padding: 10px 0;
   align-items: center;
-}
-.link {
+} */
+/* .link {
   display: flex;
   margin: 0 auto;
   font-weight: 700;
@@ -132,20 +140,20 @@ body {
   color: #757575;
   padding: 10px 0;
   align-items: center;
-}
-.adress-item-icon {
+} */
+/* .adress-item-icon {
   align-items: center;
   margin-right: 10px;
   fill: currentColor;
-}
+} */
 /*  ------- PORTFOLIO ------- */
-.my-works {
+/* .my-works {
   margin-bottom: 30px;
   color: var(--accent-color);
   text-align: center;
-}
+} */
 
-.works {
+/* .works {
   display: flex;
   flex-wrap: wrap;
   margin-left: -15px;
@@ -164,9 +172,9 @@ body {
   margin-top: 15px;
   margin-left: 15px;
   /* outline: 1px solid red; */
-  overflow: hidden;
+/* overflow: hidden; */
 
-  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+/* box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 7px 7px 7px 7px;
 }
@@ -184,8 +192,8 @@ body {
 @media screen and (min-width: 1200px) {
   .works__example {
     flex-basis: calc((100% - 60px) / 4);
-  }
-}
+  } */
+/* }
 .meta__title {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -193,11 +201,11 @@ body {
   background-color: #fff;
   color: var(--accent-color);
   border-radius: 0px 0px 4px 4px;
-}
+/* } */
 
 /*  ------- FOOTER ------- */
 
-.join-list {
+/* .join-list {
   display: flex;
   justify-content: center;
 }
@@ -234,4 +242,4 @@ body {
 
 .page-footer {
   padding: 15px 0;
-}
+} */

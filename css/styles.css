@@ -94,9 +94,15 @@ section,
     flex-basis: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .works__example {
     flex-basis: calc((100% - 45px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works__example {
+    flex-basis: calc((100% - 60px) / 4);
   }
 }
 .meta__title {

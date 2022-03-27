@@ -178,6 +178,7 @@ body {
   }
   .about__meta {
     display: flex;
+    align-items: flex-start;
   }
   .self-photo {
     max-width: 400px;
